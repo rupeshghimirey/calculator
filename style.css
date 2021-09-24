@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* outline: 1px dashed red; */
+}
+
+
+#calculator {
+    margin: 0 auto;
+    width: 19%;
+    background-color: #2b2d2f;
+    margin-top: 16px;
+    padding: 0px
+}
+#display {
+    text-align: end;
+    color: white;
+    font-size: 33px;
+    height: 70px;
+    padding: 16px;
+    margin-right: 11px;
+}
+.row {
+    width: 308px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+}
+button {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: white;
+    background-color: gray;
+    border: none;
+    font-size: 26px;
+}
+
+#equals {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+    width: 260px;
+    height: 48px;
+}
+
+.operator {
+    background-color: chocolate;
+}
+
+
+
+
