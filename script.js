@@ -4,74 +4,70 @@ var displayDiv = document.querySelector("#display");
 var equals = document.querySelector("#equals");
 
 
-var a = "";
-var b = '';
-var num = [];
-var ans;
+var x = "";
+var y = '';
+var arr = [];
+var result;
 function press(element) {
-    num.push(element);
+	arr.push(element);
 
-	if(num.length != 1){
-		a = '';
-		displayDiv.innerText= a;
+	if (arr.length != 1) {
+		x = '';
+		displayDiv.innerText = x;
 	}
 
 
-	for(i=0; i<num.length ; i++){
+	for (i = 0; i < arr.length; i++) {
 
-		a = a + num[i];			
-		
+		x = x + arr[i];
+
 	}
 
-displayDiv.innerText = a;
+	displayDiv.innerText = x;
 }
 
 function setOP(element) {
-    num.push(element);
+	arr.push(element);
 
-	if(num.length != 1){
-		a = '';
-		displayDiv.innerText= a;
+	if (arr.length != 1) {
+		x = '';
+		displayDiv.innerText = x;
 	}
 
 
-	for(i=0; i<num.length ; i++){
+	for (i = 0; i < arr.length; i++) {
 
-		a = a + num[i];			
-		
+		x = x + arr[i];
+
 	}
-    displayDiv.innerText = a;
+	displayDiv.innerText = x;
 
 }
 function clr() {
-    displayDiv.innerText = 0;
+	displayDiv.innerText = 0;
 
-    while (num.length > 0) {
-        num.pop();
-    }
+	while (arr.length > 0) {
+		arr.pop();
+	}
 
-    a = '';
-    b = '';
+	x = '';
+	y = '';
 }
 
 function calculate() {
-    displayDiv.innerText = '';
+	displayDiv.innerText = '';
 
-    for(i=0; i<num.length ; i++){
+	for (i = 0; i < arr.length; i++) {
 
-		b += num[i];						// concatenating the array "num" into a single string
+		y += arr[i];
 	}
-    ans = eval(b);
+	result = eval(y);
 
-    displayDiv.innerText = ans;
+	displayDiv.innerText = result;
 
-    while(num.length > 0){
-    	num.pop();				// emptying the array "num"
+	while (arr.length > 0) {
+		arr.pop();
 	}
+		arr.push(result.toString());
 
-	num.push(ans.toString());
-
-
-}
-
-
+	}
